@@ -3,17 +3,19 @@
     height: 700px;
     background-color: rgb(238,220,200);
 }
+
 .node circle {
     fill: #fff;
-    stroke: steelblue;
-    stroke-width: 1.5px;
+    stroke: none;
+    stroke-width: 1px;
+
 }
+
 .node {
-    font: 10px sans-serif;
-    color:white;
+    font-size:10px ;
 }
+
 .link {
     fill: none;
-    stroke: #ccc;
-    stroke-width: 1.5px;
+    stroke-width: 5px;
 }

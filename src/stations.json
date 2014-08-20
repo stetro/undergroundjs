@@ -1,64 +1,750 @@
 {
     "lines": [{
-	    "name":"1",
-	    "stations":[
-	{"name": "Weiden West"},
-	{"name": "Weiden Schulstr."},
-	{"name": "Weiden Zentrum"},
-	{"name": "Bahnstr."},
-	{"name": "Mohnweg"},
-	{"name": "Junkersdorf"},
-	{"name": "Rheinenergie-Stadion"},
-	{"name": "Alter Militärring"},
-	{"name": "Eupener Str."},
-	{"name": "Clarenbachstift"},
-	{"name": "Maarweg"},
-	{"name": "Aachener Str./Gürtel"},
-	{"name": "Melaten"},
-	{"name": "Universitätsstr."},
-	{"name": "Moltkestr."},
-	{"name": "Rudolfplatz"},
-	{"name": "Neumarkt"},
-	{"name": "Heumarkt"},
-	{"name": "Bf Deutz/Messe/Lanxess arena"},
-	{"name": "Deutz Fachhochschule"},
-	{"name": "Kalk Post"},
-	{"name": "Kalk Kapelle"},
-	{"name": "Fuldaer Str."},
-	{"name": "Höhenberg Frankfurter Str."},
-	{"name": "Kalker Friedhof"},
-	{"name": "Merheim"},
-	{"name": "Flehbachstr."},
-	{"name": "Brück Mauspfad"},
-	{"name": "Lustheide"},
-	{"name": "Refrath"},
-	{"name": "Kippekausen"},
-	{"name": "Frankenforst"},
-	{"name": "Neuenweg"},
-	{"name": "Kölner Str."},
-	{"name": "Im Hoppenkamp"},
-	{"name": "Bensberg"}
-	    ]
-	    },{
-        "name": "5",
-        "stations": [
-	{"name": "Sparkasse Am Butzweilerhof"}, 
-	{"name": "IKEA Am Butzweilerhof"},
-	{"name": "Alter Flughafen Butzweilerhof"},
-	{"name": "Rektor-Klein-Str."},
-	{"name": "Margaretastr."},
-	{"name": "Iltisstr."},
-	{"name": "Lenauplatz"},
-	{"name": "Nußbaumerstr."},
-	{"name": "Subbelrather Str./Gürtel"},
-	{"name": "Liebigstr."},
-	{"name": "Gutenbergstr."},
-	{"name": "Hans-Böckler-Pl./Bf West"},
-	{"name": "Friesenplatz"},
-	{"name": "Appellhofplatz"},
-	{"name": "Dom/Hbf"},
-	{"name": "Rathaus"},
-	{"name": "Heumarkt"}
-	]
-    }]
+            "name": "1",
+            "stations": [{
+                "name": "Weiden West"
+            }, {
+                "name": "Weiden Schulstr."
+            }, {
+                "name": "Weiden Zentrum"
+            }, {
+                "name": "Bahnstr."
+            }, {
+                "name": "Mohnweg"
+            }, {
+                "name": "Junkersdorf"
+            }, {
+                "name": "Rheinenergie-Stadion"
+            }, {
+                "name": "Alter Militärring"
+            }, {
+                "name": "Eupener Str."
+            }, {
+                "name": "Clarenbachstift"
+            }, {
+                "name": "Maarweg"
+            }, {
+                "name": "Aachener Str./Gürtel"
+            }, {
+                "name": "Melaten"
+            }, {
+                "name": "Universitätsstr."
+            }, {
+                "name": "Moltkestr."
+            }, {
+                "name": "Rudolfplatz"
+            }, {
+                "name": "Neumarkt"
+            }, {
+                "name": "Heumarkt"
+            }, {
+                "name": "Bf Deutz/Messe/Lanxess arena"
+            }, {
+                "name": "Deutz Fachhochschule"
+            }, {
+                "name": "Kalk Post"
+            }, {
+                "name": "Kalk Kapelle"
+            }, {
+                "name": "Fuldaer Str."
+            }, {
+                "name": "Höhenberg Frankfurter Str."
+            }, {
+                "name": "Kalker Friedhof"
+            }, {
+                "name": "Merheim"
+            }, {
+                "name": "Flehbachstr."
+            }, {
+                "name": "Brück Mauspfad"
+            }, {
+                "name": "Lustheide"
+            }, {
+                "name": "Refrath"
+            }, {
+                "name": "Kippekausen"
+            }, {
+                "name": "Frankenforst"
+            }, {
+                "name": "Neuenweg"
+            }, {
+                "name": "Kölner Str."
+            }, {
+                "name": "Im Hoppenkamp"
+            }, {
+                "name": "Bensberg"
+            }]
+        }, {
+            "name": "3",
+            "stations": [{
+                "name": "Ollenhauerring"
+            }, {
+                "name": "Schaffrathsgasse"
+            }, {
+                "name": "Bocklemünd"
+            }, {
+                "name": "Westfriedhof"
+            }, {
+                "name": "Wolffsohnstr."
+            }, {
+                "name": "Akazienweg"
+            }, {
+                "name": "Äußere Kanalstr."
+            }, {
+                "name": "Leyendeckerstr."
+            }, {
+                "name": "Venloer Str./Gürtel"
+            }, {
+                "name": "Körnerstr."
+            }, {
+                "name": "Piusstr."
+            }, {
+                "name": "Hans-Böckler-Platz/Bf West"
+            }, {
+                "name": "Friesenplatz"
+            }, {
+                "name": "Appellhofplatz"
+            }, {
+                "name": "Neumarkt"
+            }, {
+                "name": "Poststr."
+            }, {
+                "name": "Severinstr."
+            }, {
+                "name": "Suevenstr."
+            }, {
+                "name": "Bf Deutz/Lanxess arena"
+            }, {
+                "name": "Koelnmesse"
+            }, {
+                "name": "Stegerwaldsiedlung"
+            }, {
+                "name": "Waldecker Str."
+            }, {
+                "name": "Buchheim Frankfurter Str."
+            }, {
+                "name": "Buchheim Herler Str."
+            }, {
+                "name": "Wichheimer Str."
+            }, {
+                "name": "Holweide Vischeringstr."
+            }, {
+                "name": "Maria-Himmelfahrt-Str."
+            }, {
+                "name": "Neufelder Str."
+            }, {
+                "name": "Dellbrück Mauspfad"
+            }, {
+                "name": "Dellbrück Hauptstr."
+            }, {
+                "name": "Thielenbruch"
+            }]
+        }, {
+            "name": "4",
+            "stations": [{
+                "name": "Bocklemünd"
+            }, {
+                "name": "Westfriedhof"
+            }, {
+                "name": "Wolffsohnstr."
+            }, {
+                "name": "Akazienweg"
+            }, {
+                "name": "Äußere Kanalstr."
+            }, {
+                "name": "Leyendeckerstr."
+            }, {
+                "name": "Venloer Str./Gürtel"
+            }, {
+                "name": "Körnerstr."
+            }, {
+                "name": "Piusstr."
+            }, {
+                "name": "Hans-Böckler-Platz/Bf West"
+            }, {
+                "name": "Friesenplatz"
+            }, {
+                "name": "Appellhofplatz"
+            }, {
+                "name": "Neumarkt"
+            }, {
+                "name": "Poststr."
+            }, {
+                "name": "Severinstr."
+            }, {
+                "name": "Suevenstr."
+            }, {
+                "name": "Bf Deutz/Lanxess arena"
+            }, {
+                "name": "Koelnmesse"
+            }, {
+                "name": "Stegerwaldsiedlung"
+            }, {
+                "name": "Grünstr."
+            }, {
+                "name": "Mülheim Wiener Platz"
+            }, {
+                "name": "Keupstr."
+            }, {
+                "name": "Von-Sparr-Str."
+            }, {
+                "name": "Mülheim Berliner Str."
+            }, {
+                "name": "Im Weidenbruch"
+            }, {
+                "name": "Am Emberg"
+            }, {
+                "name": "Leuchterstr."
+            }, {
+                "name": "Odenthaler Str."
+            }, {
+                "name": "Schlebusch"
+            }]
+        }, {
+            "name": "5",
+            "stations": [{
+                "name": "Sparkasse Am Butzweilerhof"
+            }, {
+                "name": "IKEA Am Butzweilerhof"
+            }, {
+                "name": "Alter Flughafen Butzweilerhof"
+            }, {
+                "name": "Rektor-Klein-Str."
+            }, {
+                "name": "Margaretastr."
+            }, {
+                "name": "Iltisstr./Äußere Kanalstr."
+            }, {
+                "name": "Lenauplatz"
+            }, {
+                "name": "Nußbaumerstr."
+            }, {
+                "name": "Subbelrather Str./Gürtel"
+            }, {
+                "name": "Liebigstr."
+            }, {
+                "name": "Gutenbergstr."
+            }, {
+                "name": "Hans-Böckler-Platz/Bf West"
+            }, {
+                "name": "Friesenplatz"
+            }, {
+                "name": "Appellhofplatz"
+            }, {
+                "name": "Dom/Hbf"
+            }, {
+                "name": "Rathaus"
+            }, {
+                "name": "Heumarkt"
+            }]
+
+        }, {
+            "name": "7",
+            "stations": [
+
+                {
+                    "name": "Frechen-Benzelrath"
+                }, {
+                    "name": "Mühlengasse"
+                }, {
+                    "name": "Frechen Rathaus"
+                }, {
+                    "name": "Frechen Kirche"
+                }, {
+                    "name": "Frechen Bf"
+                }, {
+                    "name": "Haus Vorst"
+                }, {
+                    "name": "Marsdorf"
+                }, {
+                    "name": "Stüttgenhof"
+                }, {
+                    "name": "Brahmsstr."
+                }, {
+                    "name": "Dürener Str./Gürtel"
+                }, {
+                    "name": "Wüllnerstr."
+                }, {
+                    "name": "Aachener Str./Gürtel"
+                }, {
+                    "name": "Melaten"
+                }, {
+                    "name": "Universitätsstr."
+                }, {
+                    "name": "Moltkestr."
+                }, {
+                    "name": "Rudolfplatz"
+                }, {
+                    "name": "Neumarkt"
+                }, {
+                    "name": "Heumarkt"
+                }, {
+                    "name": "Deutzer Freiheit"
+                }, {
+                    "name": "Severinsbrücke"
+                }, {
+                    "name": "Drehbrücke"
+                }, {
+                    "name": "Poller Kirchweg"
+                }, {
+                    "name": "Raiffeisenstr."
+                }, {
+                    "name": "Poll Salmstr."
+                }, {
+                    "name": "Baumschulenweg"
+                }, {
+                    "name": "Westhoven Kölner Str."
+                }, {
+                    "name": "Westhoven Berliner Str."
+                }, {
+                    "name": "Ensen Gilgaustr."
+                }, {
+                    "name": "Ensen Kloster"
+                }, {
+                    "name": "Porz Steinstr."
+                }, {
+                    "name": "Porz Markt"
+                }, {
+                    "name": "Rosenhügel"
+                }, {
+                    "name": "Zündorf"
+                }
+
+
+            ]
+        }, {
+            "name": "9",
+            "stations": [{
+                    "name": "Sülz Hermeskeiler Platz"
+                }, {
+                    "name": "Mommsenstr."
+                }, {
+                    "name": "Zülpicher Str./Gürtel"
+                }, {
+                    "name": "Lindenburg"
+                }, {
+                    "name": "Weyertal"
+                }, {
+                    "name": "Universität"
+                }, {
+                    "name": "Dasselstr./Bf Süd"
+                }, {
+                    "name": "Zülpicher Platz"
+                }, {
+                    "name": "Mauritiuskirche"
+                }, {
+                    "name": "Neumarkt"
+                }, {
+                    "name": "Heumarkt"
+                }, {
+                    "name": "Deutzer Freiheit"
+                }, {
+                    "name": "Bf Deutz/Messe/Lanxess arena"
+                }, {
+                    "name": "Deutz Fachhochschule"
+                }, {
+                    "name": "Kalk Post"
+                }, {
+                    "name": "Kalk Kapelle"
+                }, {
+                    "name": "Vingst"
+                }, {
+                    "name": "Ostheim"
+                }, {
+                    "name": "Steinweg"
+                }, {
+                    "name": "Porzer Str."
+                }, {
+                    "name": "Rath-Heumar"
+                }, {
+                    "name": "Röttgensweg"
+                }, {
+                    "name": "Königsforst"
+                }
+
+            ]
+        }, {
+            "name": "12",
+            "stations": [{
+                    "name": "Zollstock Südfriedhof"
+                }, {
+                    "name": "Zollstockgürtel"
+                }, {
+                    "name": "Gottesweg"
+                }, {
+                    "name": "Herthastr."
+                }, {
+                    "name": "Pohligstr."
+                }, {
+                    "name": "Eifelplatz"
+                }, {
+                    "name": "Eifelstr."
+                }, {
+                    "name": "Barbarossaplatz"
+                }, {
+                    "name": "Zülpicher Platz"
+                }, {
+                    "name": "Rudolfplatz"
+                }, {
+                    "name": "Friesenplatz"
+                }, {
+                    "name": "Christophstr./Mediapark"
+                }, {
+                    "name": "Hansaring"
+                }, {
+                    "name": "Ebertplatz"
+                }, {
+                    "name": "Lohsestr."
+                }, {
+                    "name": "Florastr."
+                }, {
+                    "name": "Neusser Str./Gürtel"
+                }, {
+                    "name": "Mollwitzstr."
+                }, {
+                    "name": "Scheibenstr."
+                }, {
+                    "name": "Wilhelm-Sollmann-Str."
+                }, {
+                    "name": "Niehl"
+                }, {
+                    "name": "Geestemünder Str."
+                }, {
+                    "name": "Fordwerke Süd"
+                }, {
+                    "name": "Fordwerke Mitte"
+                }, {
+                    "name": "Fordwerke Nord"
+                }, {
+                    "name": "Merkenich Mitte"
+                }, {
+                    "name": "Merkenich"
+                }
+
+
+
+
+
+            ]
+        }, {
+            "name": "13",
+            "stations": [
+
+                {
+                    "name": "Sülzgürtel"
+                }, {
+                    "name": "Berrenrather Str./Gürtel"
+                }, {
+                    "name": "Euskirchener Str."
+                }, {
+                    "name": "Zülpicher Str./Gürtel"
+                }, {
+                    "name": "Gleueler Str./Gürtel"
+                }, {
+                    "name": "Dürener Str./Gürtel"
+                }, {
+                    "name": "Wüllnerstr."
+                }, {
+                    "name": "Aachener Str./Gürtel"
+                }, {
+                    "name": "Oskar-Jäger-Str./Gürtel"
+                }, {
+                    "name": "Weinsbergstr./Gürtel"
+                }, {
+                    "name": "Venloer Str./Gürtel"
+                }, {
+                    "name": "Subbelrather Str./Gürtel"
+                }, {
+                    "name": "Nußbaumerstr."
+                }, {
+                    "name": "Escher Str."
+                }, {
+                    "name": "Geldernstr./Parkgürtel"
+                }, {
+                    "name": "Neusser Str./Gürtel"
+                }, {
+                    "name": "Amsterdamer Str./Gürtel"
+                }, {
+                    "name": "Slabystr."
+                }, {
+                    "name": "Mülheim Wiener Platz"
+                }, {
+                    "name": "Bf Mülheim"
+                }, {
+                    "name": "Buchheim Herler Str."
+                }, {
+                    "name": "Wichheimer Str."
+                }, {
+                    "name": "Holweide Vischeringstr."
+                }
+
+
+
+            ]
+        }, {
+            "name": "15",
+            "stations": [
+
+                {
+                    "name": "Ubierring"
+                }, {
+                    "name": "Chlodwigplatz"
+                }, {
+                    "name": "Ulrepforte"
+                }, {
+                    "name": "Eifelstr."
+                }, {
+                    "name": "Barbarossaplatz"
+                }, {
+                    "name": "Zülpicher Platz"
+                }, {
+                    "name": "Rudolfplatz"
+                }, {
+                    "name": "Friesenplatz"
+                }, {
+                    "name": "Christophstr./Mediapark"
+                }, {
+                    "name": "Hansaring"
+                }, {
+                    "name": "Ebertplatz"
+                }, {
+                    "name": "Lohsestr."
+                }, {
+                    "name": "Florastr."
+                }, {
+                    "name": "Neusser Str./Gürtel"
+                }, {
+                    "name": "Mollwitzstr."
+                }, {
+                    "name": "Scheibenstr."
+                }, {
+                    "name": "Wilhelm-Sollmann-Str."
+                }, {
+                    "name": "Altonaer Platz"
+                }, {
+                    "name": "Herforder Str."
+                }, {
+                    "name": "Meerfeldstr."
+                }, {
+                    "name": "Longericher Str."
+                }, {
+                    "name": "Heimersdorf"
+                }, {
+                    "name": "Chorweiler"
+                }
+
+
+
+
+            ]
+        }, {
+            "name": "16",
+            "stations": [
+
+
+                {
+                    "name": "Bad Godesberg Stadthalle"
+                }, {
+                    "name": "Bad Godesberg Bf./Löbestr."
+                }, {
+                    "name": "Plittersdorfer Straße"
+                }, {
+                    "name": "Wurzerstr."
+                }, {
+                    "name": "Hochkreuz"
+                }, {
+                    "name": "Max-Löbner-Str./Friesdorf"
+                }, {
+                    "name": "Olof-Palme-Allee"
+                }, {
+                    "name": "Ollenhauerstraße"
+                }, {
+                    "name": "Heussallee/Museumsmeile"
+                }, {
+                    "name": "Museum Koenig"
+                }, {
+                    "name": "Bundesrechnungshof/Auswärtiges Amt"
+                }, {
+                    "name": "Juridicum"
+                }, {
+                    "name": "Universität/Markt"
+                }, {
+                    "name": "Bonn West"
+                }, {
+                    "name": "Propsthof Nord"
+                }, {
+                    "name": "Tannenbusch Süd"
+                }, {
+                    "name": "Tannenbusch Mitte"
+                }, {
+                    "name": "Hersel"
+                }, {
+                    "name": "Uedorf"
+                }, {
+                    "name": "Widdig"
+                }, {
+                    "name": "Urfeld"
+                }, {
+                    "name": "Wesseling Süd"
+                }, {
+                    "name": "Wesseling"
+                }, {
+                    "name": "Wesseling Nord"
+                }, {
+                    "name": "Godorf Bf"
+                }, {
+                    "name": "Sürth Bf"
+                }, {
+                    "name": "Michaelshoven"
+                }, {
+                    "name": "Siegstr."
+                }, {
+                    "name": "Rodenkirchen Bf"
+                }, {
+                    "name": "Heinrich-Lübke-Ufer"
+                }, {
+                    "name": "Bayenthalgürtel"
+                }, {
+                    "name": "Schönhauser Str."
+                }, {
+                    "name": "Ubierring"
+                }, {
+                    "name": "Chlodwigplatz"
+                }, {
+                    "name": "Ulrepforte"
+                }, {
+                    "name": "Eifelstr."
+                }, {
+                    "name": "Barbarossaplatz"
+                }, {
+                    "name": "Poststr."
+                }, {
+                    "name": "Neumarkt"
+                }, {
+                    "name": "Appellhofplatz"
+                }, {
+                    "name": "Dom/Hbf"
+                }, {
+                    "name": "Breslauer Platz/Hbf"
+                }, {
+                    "name": "Ebertplatz"
+                }, {
+                    "name": "Reichenspergerplatz"
+                }, {
+                    "name": "Kinderkrankenhaus"
+                }, {
+                    "name": "Amsterdamer Str./Gürtel"
+                }, {
+                    "name": "Nesselrodestr."
+                }, {
+                    "name": "Niehl Sebastianstr."
+                }
+
+            ]
+        }, {
+            "name": "18",
+            "stations": [{
+                    "name": "Bonn West"
+                }, {
+                    "name": "Brühler Straße"
+                }, {
+                    "name": "Robert-Kirchhoff-Straße"
+                }, {
+                    "name": "Dransdorf"
+                }, {
+                    "name": "Alfter / Alanus Hochschule"
+                }, {
+                    "name": "Roisdorf West"
+                }, {
+                    "name": "Bornheim Rathaus"
+                }, {
+                    "name": "Bornheim"
+                }, {
+                    "name": "Dersdorf"
+                }, {
+                    "name": "Waldorf"
+                }, {
+                    "name": "Merten"
+                }, {
+                    "name": "Walberberg"
+                }, {
+                    "name": "Schwadorf"
+                }, {
+                    "name": "Badorf"
+                }, {
+                    "name": "Brühl Süd"
+                }, {
+                    "name": "Brühl Mitte"
+                }, {
+                    "name": "Brühl Nord"
+                }, {
+                    "name": "Brühl-Vochem"
+                }, {
+                    "name": "Fischenich"
+                }, {
+                    "name": "Hürth-Hermülheim"
+                }, {
+                    "name": "Kiebitzweg"
+                }, {
+                    "name": "Efferen"
+                }, {
+                    "name": "Klettenbergpark"
+                }, {
+                    "name": "Sülzgürtel"
+                }, {
+                    "name": "Sülzburgstr."
+                }, {
+                    "name": "Arnulfstr."
+                }, {
+                    "name": "Weißhausstr."
+                }, {
+                    "name": "Eifelwal"
+                }, {
+                    "name": "Barbarossaplatz"
+                }, {
+                    "name": "Poststr."
+                }, {
+                    "name": "Neumarkt"
+                }, {
+                    "name": "Appellhofplatz"
+                }, {
+                    "name": "Dom/Hbf"
+                }, {
+                    "name": "Breslauer Platz/Hbf"
+                }, {
+                    "name": "Ebertplatz"
+                }, {
+                    "name": "Reichenspergerplatz"
+                }, {
+                    "name": "Zoo/Flora"
+                }, {
+                    "name": "Boltensternstr."
+                }, {
+                    "name": "Slabystr."
+                }, {
+                    "name": "Mülheim Wiener Platz"
+                }, {
+                    "name": "Bf Mülheim"
+                }, {
+                    "name": "Buchheim Herler Str."
+                }, {
+                    "name": "Wichheimer Str."
+                }, {
+                    "name": "Holweide Vischeringstr."
+                }, {
+                    "name": "Maria-Himmelfahrt-Str."
+                }, {
+                    "name": "Neufelder Str."
+                }, {
+                    "name": "Dellbrück Mauspfad"
+                }, {
+                    "name": "Dellbrück Hauptstr."
+                }, {
+                    "name": "Thielenbruch"
+                }
+
+            ]
+        }
+
+    ]
 }
