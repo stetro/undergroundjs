@@ -1,0 +1,22 @@
+{
+  "name": "undergroundjs",
+  "version": "0.1.0",
+  "description": "This is a javascript library based on d3 to plot underground maps in the bowser.",
+  "main": "src/index.html",
+  "authors": [
+    "Steffen Tröster"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "src/components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "d3": "~3.4.11",
+    "bootswatch": "~3.2.0+2"
+  }
+}

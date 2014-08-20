@@ -1,0 +1,19 @@
+#map {
+    margin-top: 50px;
+    height: 700px;
+    background-color: rgb(238,220,200);
+}
+.node circle {
+    fill: #fff;
+    stroke: steelblue;
+    stroke-width: 1.5px;
+}
+.node {
+    font: 10px sans-serif;
+    color:white;
+}
+.link {
+    fill: none;
+    stroke: #ccc;
+    stroke-width: 1.5px;
+}
