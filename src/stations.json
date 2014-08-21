@@ -2,7 +2,11 @@
     "lines": [{
             "name": "1",
             "stations": [{
-                "name": "Weiden West"
+                "name": "Weiden West",
+                "fixed": true,
+                "x": -200,
+                "y": 100
+
             }, {
                 "name": "Weiden Schulstr."
             }, {
@@ -72,7 +76,10 @@
             }, {
                 "name": "Im Hoppenkamp"
             }, {
-                "name": "Bensberg"
+                "name": "Bensberg",
+                "fixed": true,
+                "x": 1600,
+                "y": 300
             }]
         }, {
             "name": "3",
@@ -142,7 +149,10 @@
         }, {
             "name": "4",
             "stations": [{
-                "name": "Bocklemünd"
+                "name": "Bocklemünd",
+                "fixed": true,
+                "x": 60,
+                "y": 40
             }, {
                 "name": "Westfriedhof"
             }, {
@@ -198,12 +208,18 @@
             }, {
                 "name": "Odenthaler Str."
             }, {
-                "name": "Schlebusch"
+                "name": "Schlebusch",
+                "fixed": true,
+                "x": 1000,
+                "y": -400
             }]
         }, {
             "name": "5",
             "stations": [{
-                "name": "Sparkasse Am Butzweilerhof"
+                "name": "Sparkasse Am Butzweilerhof",
+                "fixed": true,
+                "x": 120,
+                "y": -50
             }, {
                 "name": "IKEA Am Butzweilerhof"
             }, {
@@ -307,7 +323,11 @@
                 }, {
                     "name": "Rosenhügel"
                 }, {
-                    "name": "Zündorf"
+                    "name": "Zündorf",
+                    "fixed": true,
+                    "x": 1000,
+                    "y": 800
+
                 }
 
 
@@ -418,7 +438,10 @@
                 }, {
                     "name": "Merkenich Mitte"
                 }, {
-                    "name": "Merkenich"
+                    "name": "Merkenich",
+                    "fixed": true,
+                    "x": 200,
+                    "y": -300
                 }
 
 
@@ -530,7 +553,10 @@
                 }, {
                     "name": "Heimersdorf"
                 }, {
-                    "name": "Chorweiler"
+                    "name": "Chorweiler",
+                    "fixed": true,
+                    "x": 0,
+                    "y": -200
                 }
 
 
@@ -543,7 +569,10 @@
 
 
                 {
-                    "name": "Bad Godesberg Stadthalle"
+                    "name": "Bad Godesberg Stadthalle",
+                    "fixed": true,
+                    "x": 400,
+                    "y": 1600
                 }, {
                     "name": "Bad Godesberg Bf./Löbestr."
                 }, {
@@ -567,7 +596,10 @@
                 }, {
                     "name": "Juridicum"
                 }, {
-                    "name": "Universität/Markt"
+                    "name": "Universität/Markt",
+                    "x": 400,
+                    "y": 1000
+
                 }, {
                     "name": "Bonn West"
                 }, {
@@ -740,7 +772,10 @@
                 }, {
                     "name": "Dellbrück Hauptstr."
                 }, {
-                    "name": "Thielenbruch"
+                    "name": "Thielenbruch",
+                    "fixed": true,
+                    "x": 1200,
+                    "y": -100
                 }
 
             ]

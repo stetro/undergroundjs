@@ -1,6 +1,6 @@
 (function() {
 
-    var color = d3.scale.category20b();
+    var color = d3.scale.category10();
 
     var height = 600;
     var width = 1140;
@@ -14,7 +14,8 @@
 
     var force = d3.layout.force()
         .size([width, height])
-        .linkDistance(10)
+        .linkDistance(30)
+	.linkStrength(10)
         .charge(-200);
 
     var svg = d3.select("#map")
@@ -34,7 +35,6 @@
             return 0;
         }
 
-
         var node_data_object = {};
         var link_data = [];
 
@@ -44,20 +44,20 @@
             }
         });
 
-        root.lines.forEach(function(line) {
+        root.lines.forEach(function(line, index) {
             for (var i = 0; i < line.stations.length; i++) {
                 if (line.stations[i + 1] != undefined) {
                     link_data.push({
                         target: node_data_object[line.stations[i].name],
                         source: node_data_object[line.stations[i + 1].name],
-                        line: line.name
+                        line: line.name,
+                        index: index
                     });
                 }
 
             }
         });
 
-        console.log(link_data);
 
         var node_data = Object.keys(node_data_object).map(function(k) {
             return node_data_object[k]
@@ -68,6 +68,14 @@
                 var dx = d.target.x - d.source.x,
                     dy = d.target.y - d.source.y,
                     dr = Math.sqrt(dx * dx + dy * dy);
+                if (d.index == 1) {
+                    return "M" +
+                        (d.source.x + Math.abs(dy) / (Math.abs(dx) + Math.abs(dy)) * 12) + "," +
+                        (d.source.y + Math.abs(dx) / (Math.abs(dx) + Math.abs(dy)) * 12) + "L" +
+                        (d.target.x + Math.abs(dy) / (Math.abs(dx) + Math.abs(dy)) * 12) + "," +
+                        (d.target.y + Math.abs(dx) / (Math.abs(dx) + Math.abs(dy)) * 12);
+                }
+
                 return "M" +
                     d.source.x + "," +
                     d.source.y + "L" +
@@ -77,6 +85,7 @@
             node.attr("transform", function(d) {
                 return "translate(" + d.x + "," + d.y + ")";
             });
+
         }
 
         force.on("tick", tick)
@@ -84,7 +93,8 @@
             .links(link_data)
             .start();
 
-        var path = svg.append("svg:g").selectAll("path")
+        var path = svg.append("svg:g")
+            .selectAll("path")
             .data(force.links())
             .enter().append("svg:path")
             .attr("class", "link")
