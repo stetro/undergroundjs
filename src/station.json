@@ -1,0 +1,80 @@
+{
+    "lines": [{
+            "name": "1",
+            "stations": [{
+                "name": "Weiden West"
+            }, {
+                "name": "Weiden Schulstr."
+            }, {
+                "name": "Weiden Zentrum"
+            }, {
+                "name": "Bahnstr."
+            }, {
+                "name": "Mohnweg"
+            }, {
+                "name": "Junkersdorf"
+            }, {
+                "name": "Rheinenergie-Stadion"
+            }, {
+                "name": "Alter Militärring"
+            }, {
+                "name": "Eupener Str."
+            }, {
+                "name": "Clarenbachstift"
+            }, {
+                "name": "Maarweg"
+            }, {
+                "name": "Aachener Str./Gürtel"
+            }, {
+                "name": "Melaten"
+            }, {
+                "name": "Universitätsstr."
+            }, {
+                "name": "Moltkestr."
+            }, {
+                "name": "Rudolfplatz"
+            }, {
+                "name": "Neumarkt"
+            }, {
+                "name": "Heumarkt"
+            }, {
+                "name": "Bf Deutz/Messe/Lanxess arena"
+            }, {
+                "name": "Deutz Fachhochschule"
+            }, {
+                "name": "Kalk Post"
+            }, {
+                "name": "Kalk Kapelle"
+            }, {
+                "name": "Fuldaer Str."
+            }, {
+                "name": "Höhenberg Frankfurter Str."
+            }, {
+                "name": "Kalker Friedhof"
+            }, {
+                "name": "Merheim"
+            }, {
+                "name": "Flehbachstr."
+            }, {
+                "name": "Brück Mauspfad"
+            }, {
+                "name": "Lustheide"
+            }, {
+                "name": "Refrath"
+            }, {
+                "name": "Kippekausen"
+            }, {
+                "name": "Frankenforst"
+            }, {
+                "name": "Neuenweg"
+            }, {
+                "name": "Kölner Str."
+            }, {
+                "name": "Im Hoppenkamp"
+            }, {
+                "name": "Bensberg"
+            }]
+        }
+
+    ]
+}
