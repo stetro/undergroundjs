@@ -29,7 +29,7 @@
         .attr("transform", "translate(40,0)");
 
 
-    d3.json("stations.json", function(error, root) {
+    d3.json("src/stations.json", function(error, root) {
 
         if (error) {
             console.log("ERROR!");

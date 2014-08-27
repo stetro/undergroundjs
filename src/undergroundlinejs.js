@@ -23,7 +23,7 @@
         .append("g")
         .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-    d3.json("station.json", function(error, root) {
+    d3.json("src/station.json", function(error, root) {
 
         root.lines.forEach(function(line) {
 
