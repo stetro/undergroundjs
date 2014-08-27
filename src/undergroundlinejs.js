@@ -6,7 +6,7 @@
     var width = 1140;
 
     var margin = {
-        top: 50,
+        top: 100,
         left: 20,
     };
 
@@ -27,45 +27,47 @@
 
         root.lines.forEach(function(line) {
 
-            var lineElement = svg.append("g")
-                .attr("class", "line");
+            var strokeElement = svg.append("g")
+                .attr("class", "stroke");
 
-            var node = lineElement.selectAll("g")
-                .data(line.stations)
-                .enter()
-                .append("g");
+            var stationsElement = svg.append("g")
+                .attr("class", "stations");
 
-
-            node.attr("transform", function(d, index) {
-                d.x = index * 45;
-                d.y = 10;
-                return "translate(" + d.x + "," + d.y + ")";
-            }).attr("class", "node");
-
-            node.append("circle")
-                .attr("r", 3);
-
-            node.append("text")
-                .attr("x", 12)
-                .attr("dy", ".35em")
-                .attr("transform", "translate(0,0) rotate(40,0,0)")
-                .text(function(d) {
-                    return d.name;
-                });
-
-            lineElement.append("g")
-                .datum(line.stations)
+            strokeElement.datum(line.stations)
                 .append("path")
                 .attr("stroke", "red")
-                .style("stroke-width", "5")
+                .attr("stroke-linecap", "round")
+                .attr("stroke-width", "5")
                 .attr("d", d3.svg.line()
                     .x(function(_, idx) {
                         return idx * 45;
                     })
                     .y(function(_, idx) {
-                        return 10;
+                        return 10 * idx;
                     })
             )
+
+            var node = stationsElement.selectAll("g")
+                .data(line.stations)
+                .enter()
+                .append("g");
+
+            node.attr("transform", function(d, index) {
+                d.x = index * 45;
+                d.y = 10 * index;
+                return "translate(" + d.x + "," + d.y + ")";
+            }).attr("class", "node");
+
+            node.append("circle")
+                .attr("r", 1.7);
+
+            node.append("text")
+                .attr("x", 12)
+                .attr("dy", ".35em")
+                .attr("transform", "translate(0,0) rotate(-40,0,0)")
+                .text(function(d) {
+                    return d.name;
+                });
         });
     });
 })();
