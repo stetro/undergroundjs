@@ -24,8 +24,19 @@
         .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
     d3.json("src/station.json", function(error, root) {
+        var node_data_object = {};
 
         root.lines.forEach(function(line) {
+            for (var i = 0; i < line.stations.length; i++) {
+                node_data_object[line.stations[i].name] = line.stations[i];
+            }
+        });
+
+        var node_data = Object.keys(node_data_object).map(function(k) {
+            return node_data_object[k]
+        });
+
+        root.lines.forEach(function(line, lineindex) {
 
             var strokeElement = svg.append("g")
                 .attr("class", "stroke");
@@ -35,7 +46,7 @@
 
             strokeElement.datum(line.stations)
                 .append("path")
-                .attr("stroke", "red")
+                .attr("stroke", color(lineindex))
                 .attr("stroke-linecap", "round")
                 .attr("stroke-width", "5")
                 .attr("d", d3.svg.line()
@@ -43,7 +54,7 @@
                         return idx * 45;
                     })
                     .y(function(_, idx) {
-                        return 10 * idx;
+                        return 10 +(lineindex*150);
                     })
             )
 
@@ -54,7 +65,7 @@
 
             node.attr("transform", function(d, index) {
                 d.x = index * 45;
-                d.y = 10 * index;
+                d.y = 10 +(lineindex * 150);
                 return "translate(" + d.x + "," + d.y + ")";
             }).attr("class", "node");
 

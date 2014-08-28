@@ -4,7 +4,7 @@ module.exports = function(grunt) {
         connect: {
             example: {
                 port: 8081,
-                base: 'src'
+                base: './'
             }
         },
         uglify: {

@@ -74,6 +74,57 @@
             }, {
                 "name": "Bensberg"
             }]
+        },{
+            "name": "9",
+            "stations": [{
+                    "name": "Sülz Hermeskeiler Platz"
+                }, {
+                    "name": "Mommsenstr."
+                }, {
+                    "name": "Zülpicher Str./Gürtel"
+                }, {
+                    "name": "Lindenburg"
+                }, {
+                    "name": "Weyertal"
+                }, {
+                    "name": "Universität"
+                }, {
+                    "name": "Dasselstr./Bf Süd"
+                }, {
+                    "name": "Zülpicher Platz"
+                }, {
+                    "name": "Mauritiuskirche"
+                }, {
+                    "name": "Neumarkt"
+                }, {
+                    "name": "Heumarkt"
+                }, {
+                    "name": "Deutzer Freiheit"
+                }, {
+                    "name": "Bf Deutz/Messe/Lanxess arena"
+                }, {
+                    "name": "Deutz Fachhochschule"
+                }, {
+                    "name": "Kalk Post"
+                }, {
+                    "name": "Kalk Kapelle"
+                }, {
+                    "name": "Vingst"
+                }, {
+                    "name": "Ostheim"
+                }, {
+                    "name": "Steinweg"
+                }, {
+                    "name": "Porzer Str."
+                }, {
+                    "name": "Rath-Heumar"
+                }, {
+                    "name": "Röttgensweg"
+                }, {
+                    "name": "Königsforst"
+                }
+
+            ]
         }
 
     ]
