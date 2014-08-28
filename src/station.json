@@ -1,42 +1,105 @@
 {
     "lines": [{
-            "name": "1",
-            "stations": [{
-                "name": "Weiden West"
+        "name": "1",
+        "stations": [{
+            "name": "Weiden West"
+        }, {
+            "name": "Weiden Schulstr."
+        }, {
+            "name": "Weiden Zentrum"
+        }, {
+            "name": "Bahnstr."
+        }, {
+            "name": "Mohnweg"
+        }, {
+            "name": "Junkersdorf"
+        }, {
+            "name": "Rheinenergie-Stadion"
+        }, {
+            "name": "Alter Militärring"
+        }, {
+            "name": "Eupener Str."
+        }, {
+            "name": "Clarenbachstift"
+        }, {
+            "name": "Maarweg"
+        }, {
+            "name": "Aachener Str./Gürtel"
+        }, {
+            "name": "Melaten"
+        }, {
+            "name": "Universitätsstr."
+        }, {
+            "name": "Moltkestr."
+        }, {
+            "name": "Rudolfplatz"
+        }, {
+            "name": "Neumarkt"
+        }, {
+            "name": "Heumarkt"
+        }, {
+            "name": "Bf Deutz/Messe/Lanxess arena"
+        }, {
+            "name": "Deutz Fachhochschule"
+        }, {
+            "name": "Kalk Post"
+        }, {
+            "name": "Kalk Kapelle"
+        }, {
+            "name": "Fuldaer Str."
+        }, {
+            "name": "Höhenberg Frankfurter Str."
+        }, {
+            "name": "Kalker Friedhof"
+        }, {
+            "name": "Merheim"
+        }, {
+            "name": "Flehbachstr."
+        }, {
+            "name": "Brück Mauspfad"
+        }, {
+            "name": "Lustheide"
+        }, {
+            "name": "Refrath"
+        }, {
+            "name": "Kippekausen"
+        }, {
+            "name": "Frankenforst"
+        }, {
+            "name": "Neuenweg"
+        }, {
+            "name": "Kölner Str."
+        }, {
+            "name": "Im Hoppenkamp"
+        }, {
+            "name": "Bensberg"
+        }]
+    }, {
+        "name": "9",
+        "stations": [{
+                "name": "Sülz Hermeskeiler Platz"
             }, {
-                "name": "Weiden Schulstr."
+                "name": "Mommsenstr."
             }, {
-                "name": "Weiden Zentrum"
+                "name": "Zülpicher Str./Gürtel"
             }, {
-                "name": "Bahnstr."
+                "name": "Lindenburg"
             }, {
-                "name": "Mohnweg"
+                "name": "Weyertal"
             }, {
-                "name": "Junkersdorf"
+                "name": "Universität"
             }, {
-                "name": "Rheinenergie-Stadion"
+                "name": "Dasselstr./Bf Süd"
             }, {
-                "name": "Alter Militärring"
+                "name": "Zülpicher Platz"
             }, {
-                "name": "Eupener Str."
-            }, {
-                "name": "Clarenbachstift"
-            }, {
-                "name": "Maarweg"
-            }, {
-                "name": "Aachener Str./Gürtel"
-            }, {
-                "name": "Melaten"
-            }, {
-                "name": "Universitätsstr."
-            }, {
-                "name": "Moltkestr."
-            }, {
-                "name": "Rudolfplatz"
+                "name": "Mauritiuskirche"
             }, {
                 "name": "Neumarkt"
             }, {
                 "name": "Heumarkt"
+            }, {
+                "name": "Deutzer Freiheit"
             }, {
                 "name": "Bf Deutz/Messe/Lanxess arena"
             }, {
@@ -46,86 +109,21 @@
             }, {
                 "name": "Kalk Kapelle"
             }, {
-                "name": "Fuldaer Str."
+                "name": "Vingst"
             }, {
-                "name": "Höhenberg Frankfurter Str."
+                "name": "Ostheim"
             }, {
-                "name": "Kalker Friedhof"
+                "name": "Steinweg"
             }, {
-                "name": "Merheim"
+                "name": "Porzer Str."
             }, {
-                "name": "Flehbachstr."
+                "name": "Rath-Heumar"
             }, {
-                "name": "Brück Mauspfad"
+                "name": "Röttgensweg"
             }, {
-                "name": "Lustheide"
-            }, {
-                "name": "Refrath"
-            }, {
-                "name": "Kippekausen"
-            }, {
-                "name": "Frankenforst"
-            }, {
-                "name": "Neuenweg"
-            }, {
-                "name": "Kölner Str."
-            }, {
-                "name": "Im Hoppenkamp"
-            }, {
-                "name": "Bensberg"
-            }]
-        },{
-            "name": "9",
-            "stations": [{
-                    "name": "Sülz Hermeskeiler Platz"
-                }, {
-                    "name": "Mommsenstr."
-                }, {
-                    "name": "Zülpicher Str./Gürtel"
-                }, {
-                    "name": "Lindenburg"
-                }, {
-                    "name": "Weyertal"
-                }, {
-                    "name": "Universität"
-                }, {
-                    "name": "Dasselstr./Bf Süd"
-                }, {
-                    "name": "Zülpicher Platz"
-                }, {
-                    "name": "Mauritiuskirche"
-                }, {
-                    "name": "Neumarkt"
-                }, {
-                    "name": "Heumarkt"
-                }, {
-                    "name": "Deutzer Freiheit"
-                }, {
-                    "name": "Bf Deutz/Messe/Lanxess arena"
-                }, {
-                    "name": "Deutz Fachhochschule"
-                }, {
-                    "name": "Kalk Post"
-                }, {
-                    "name": "Kalk Kapelle"
-                }, {
-                    "name": "Vingst"
-                }, {
-                    "name": "Ostheim"
-                }, {
-                    "name": "Steinweg"
-                }, {
-                    "name": "Porzer Str."
-                }, {
-                    "name": "Rath-Heumar"
-                }, {
-                    "name": "Röttgensweg"
-                }, {
-                    "name": "Königsforst"
-                }
+                "name": "Königsforst"
+            }
 
-            ]
-        }
-
-    ]
+        ]
+    }]
 }
