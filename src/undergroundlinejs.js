@@ -1,7 +1,10 @@
 (function() {
 
     var color = d3.scale.category10();
-
+    var color = function(idx) {
+        var colors = ['#a5291f', '#ff143a'];
+        return colors[idx];
+    };
     var height = 600;
     var width = 1140;
 
@@ -24,17 +27,6 @@
         .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
     d3.json("src/station.json", function(error, root) {
-        var node_data_object = {};
-
-        root.lines.forEach(function(line) {
-            for (var i = 0; i < line.stations.length; i++) {
-                node_data_object[line.stations[i].name] = line.stations[i];
-            }
-        });
-
-        var node_data = Object.keys(node_data_object).map(function(k) {
-            return node_data_object[k]
-        });
 
         root.lines.forEach(function(line, lineindex) {
 
@@ -49,14 +41,23 @@
                 .attr("stroke", color(lineindex))
                 .attr("stroke-linecap", "round")
                 .attr("stroke-width", "5")
+                .attr("fill", "none")
                 .attr("d", d3.svg.line()
-                    .x(function(_, idx) {
-                        return idx * 45;
+                    .x(function(d, idx) {
+                        var station = sameStationInOtherLine(d, lineindex, root.lines);
+                        if (station.x) {
+                            return station.x;
+                        }
+                        return calculateX(d, idx, lineindex);
                     })
-                    .y(function(_, idx) {
-                        return 10 +(lineindex*150);
+                    .y(function(d, idx) {
+                        var station = sameStationInOtherLine(d, lineindex, root.lines);
+                        if (station.y) {
+                            return calculateYBySameStation(station);
+                        }
+                        return calculateY(d, lineindex);
                     })
-            )
+            );
 
             var node = stationsElement.selectAll("g")
                 .data(line.stations)
@@ -64,21 +65,66 @@
                 .append("g");
 
             node.attr("transform", function(d, index) {
-                d.x = index * 45;
-                d.y = 10 +(lineindex * 150);
+
+                var station = sameStationInOtherLine(d, lineindex, root.lines);
+                if (station.x) {
+                    d.x = station.x;
+                    d.y = calculateYBySameStation(station);
+                    d.name = "";
+                } else {
+                    d.x = calculateX(d, index, lineindex);
+                    d.y = calculateY(d, lineindex);
+                }
+
                 return "translate(" + d.x + "," + d.y + ")";
             }).attr("class", "node");
 
             node.append("circle")
-                .attr("r", 1.7);
+                .attr("r", 1.6);
 
             node.append("text")
                 .attr("x", 12)
                 .attr("dy", ".35em")
-                .attr("transform", "translate(0,0) rotate(-40,0,0)")
+                .attr("transform", function(d) {
+                    return "translate(0,0) rotate(" + ((lineindex * 80) - 40) + ",0,0)"
+                })
                 .text(function(d) {
                     return d.name;
                 });
         });
     });
 })();
+
+function calculateX(d, idx, lineindex) {
+    return idx * 60 + lineindex * 390;
+}
+
+function calculateY(d, idx, station) {
+    return 10 + (idx * 50);
+}
+
+function calculateYBySameStation(station) {
+    return station.y + station.count * 3.4;
+}
+
+
+function sameStationInOtherLine(rootStation, lineindex, lines) {
+    var result = undefined;
+    lines.forEach(function(line) {
+        line.stations.forEach(function(station, idx) {
+            if (station.name == rootStation.name) {
+                if (result == undefined) {
+                    result = {};
+                    result.count = 1;
+                } else {
+                    result.count = result.count + 1;
+                }
+            }
+            if (station.name == rootStation.name && station.x != undefined) {
+                result.x = station.x;
+                result.y = station.y;
+            }
+        });
+    });
+    return result;
+}

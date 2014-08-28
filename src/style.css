@@ -1,7 +1,7 @@
 #map {
     margin-top: 50px;
     height: 700px;
-    background-color: rgb(238, 220, 200);
+    background-color: white;
 }
 .node > circle {
     fill: #fff;
